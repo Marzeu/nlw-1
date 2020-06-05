@@ -10,11 +10,16 @@ nunjucks.configure("src/views", {
 });
 
 server.get("/", function (req, res) {
-    res.sendFile(__dirname + "/views/index.html");
+    return res.render("index.html", { title: "titulos" });
 });
 
 server.get("/create-point", function (req, res) {
-    res.sendFile(__dirname + "/views/create-point.html");
+    return res.render("create-point.html");
+});
+
+server.get("/search", function (req, res) {
+    return res.render("search-results.html");
 });
 
 server.listen(3000);
+
