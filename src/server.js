@@ -10,7 +10,7 @@ nunjucks.configure("src/views", {
 });
 
 server.get("/", function (req, res) {
-    return res.render("index.html", { title: "titulos" });
+    return res.render("index.html");
 });
 
 server.get("/create-point", function (req, res) {
