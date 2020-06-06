@@ -65,7 +65,6 @@ function handleSelectedItem(event) {
         return itemFound
     })
 
-
     if (alreadySelected >= 0) {
         const filteredItems = selectItems.filter(item => {
             const itemIsDifferente = item != itemId
@@ -78,5 +77,4 @@ function handleSelectedItem(event) {
     }
 
     collectedItens.value = selectItems
-
 }
